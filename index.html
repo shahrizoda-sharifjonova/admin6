@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav container">
+            <a href="index.html" class="header__logo">Все эксперты</a>
+            <button type="button" class="header__btn popup-open" data-target="register">Регистрация</button>
+        </nav>
+    </header>
+    <main>
+        <section class="cabinet">
+            <div class="cabinet__body container">
+                <div class="cabinet__left">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/77ZozI0rw7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="cabinet__right">
+                    <form action="" class="cabinet__form">
+                        <p class="cabinet__title">Добро пожаловать!</p>
+                        <p class="cabinet__p">Рыбным текстом называется текст, служащий для временного наполнения макета</p>
+                        <p class="cabinet__subtitle">Вход в личный кабинет</p>
+                        <input type="text" placeholder="Логин" class="cabinet__input" required>
+                        <input type="password" placeholder="Пароль" class="cabinet__input" required>
+                        <button type="submit" class="cabinet__button">Войти</button>
+                        <a href="#!" class="cabinet__link">Забыли пароль?</a>
+                    </form>
+                    <div class="cabinet__registers">
+                        <p class="cabinet__text">Еще не зарегистрированы?</p>
+                        <button type="button" class="cabinet__btn popup-open" data-target="register">Создать аккаунт</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="popup" id="register">
+            <div class="popup-bg popup-close"></div>
+            <form action="" class="popup__content">
+                <button type="button" class="popup-close">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.63155 2.80635C3.40375 2.57855 3.0344 2.57855 2.8066 2.80635C2.57879 3.03415 2.57879 3.4035 2.8066 3.63131L6.1752 6.9999L2.80663 10.3685C2.57882 10.5963 2.57882 10.9656 2.80663 11.1934C3.03444 11.4212 3.40379 11.4212 3.63159 11.1934L7.00015 7.82485L10.3687 11.1934C10.5965 11.4212 10.9659 11.4212 11.1937 11.1934C11.4215 10.9656 11.4215 10.5963 11.1937 10.3685L7.8251 6.9999L11.1937 3.63131C11.4215 3.4035 11.4215 3.03415 11.1937 2.80635C10.9659 2.57855 10.5966 2.57855 10.3687 2.80635L7.00015 6.17495L3.63155 2.80635Z" fill="#898989"/>
+                    </svg>                        
+                </button>
+                <h2 class="popup__title">Регистрация</h2>
+                <div class="popup__radios">
+                    <div class="popup__radio">
+                        <input type="radio" class="popup__radio-input" name="radio" id="radio1" checked>
+                        <label for="radio1" class="popup__radio-label">Эксперт</label>
+                    </div>
+                    <div class="popup__radio">
+                        <input type="radio" class="popup__radio-input" name="radio" id="radio2">
+                        <label for="radio2" class="popup__radio-label">Проектная организация</label>
+                    </div>
+                </div>
+                <input type="text" placeholder="Фамилия" class="popup__input" required>
+                <input type="text" placeholder="Имя" class="popup__input" required>
+                <input type="text" placeholder="Отчество" class="popup__input" required>
+                <input type="number" placeholder="+ 7" class="popup__input" required>
+                <button type="submit" class="cabinet__button">Регистрация</button>
+                <a href="#!" class="cabinet__link">Забыли пароль?</a>
+            </form>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
